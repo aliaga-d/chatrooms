@@ -4,6 +4,10 @@ var path = require('path');
 var mime= require('mime');
 var cache={};
 
+var chatServer= require('./lib/chat_server');
+chatServer.listen(server);  //here??
+
+
 //handles 404 errors
 function send404(response){
     response.writeHead(404,{'Content-Type': 'text/plain'});
